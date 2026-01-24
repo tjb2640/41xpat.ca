@@ -1,0 +1,116 @@
+body {
+    background-color: #211111;
+    color: white;
+    font-family: serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    color: #db4c2d;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+h1 > span {
+    font-size: 2rem;
+    font-style: normal;
+    position: relative;
+    top: -0.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+}
+
+h3 {
+    color: #ead67a;
+    font-size: 1.25rem;
+    margin-top: 1.75rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px dotted white;
+    width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-top: 0.75rem;
+}
+
+#pagecontent {
+    background-color: #322222;
+    border: 1rem solid #211111;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+/* article pages */
+
+.pagecontent-article {
+    direction: column;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.pagecontent-article a {
+    line-height: 1.25rem;
+    margin-top: 0.8rem;
+}
+
+.pagecontent-article span {
+    font-style: italic;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+/* homepage */
+
+.link-social {
+    color: #ead67a;
+}
+
+.pagecontent-articlelink {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 0.25rem 0;
+}
+
+.pagecontent-articlelink > a {
+    border-bottom: 1px dashed #db4c2d;
+    flex: 1;
+    font-style: italic;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.pagecontent-articlelink > a::before {
+    content: ">";
+}
+
+.pagecontent-articlelink span {
+    font-style: italic;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    text-align: right;
+}
+
+.pagecontent-articlelink span::before {
+    content: "(";
+}
+
+.pagecontent-articlelink span::after {
+    content: ")";
+}
